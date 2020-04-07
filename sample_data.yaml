@@ -1,0 +1,12 @@
+---
+apiVersion: "k8s.cni.cncf.io/v1"
+kind: SampleCRD
+metadata:
+  name: testdata1
+spec:
+  protocol: TCP
+  port: 80
+  selector:
+    matchLabels:
+      app: nginx
+      tier: frontend
